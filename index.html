@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Семеен хотел Зора — София</title>
+<meta name="description" content="Семеен хотел Зора — уютен хотел в София, кв. Лагера, до Пирогов и ВМА. Директна резервация.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap&subset=cyrillic" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf6ef; --surface:#fff; --ink:#1d2a2f; --muted:#5d6b70; --line:#e6dfd2;
+  --brand:#16424a; --brand-2:#0e2d33; --accent:#c8873a; --accent-2:#e9b872;
+  --radius:18px; --shadow:0 10px 30px rgba(22,66,74,.12);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme=light]){--bg:#0f1a1d;--surface:#17262a;--ink:#f1ece2;--muted:#a3b2b6;--line:#26383d;--brand:#7fc1c9;--brand-2:#0a1315;--shadow:0 10px 30px rgba(0,0,0,.4)}
+}
+:root[data-theme=dark]{--bg:#0f1a1d;--surface:#17262a;--ink:#f1ece2;--muted:#a3b2b6;--line:#26383d;--brand:#7fc1c9;--brand-2:#0a1315;--shadow:0 10px 30px rgba(0,0,0,.4)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;line-height:1.1;font-weight:600}
+a{color:inherit}
+.wrap{max-width:1180px;margin:auto;padding:0 20px}
+section{padding:88px 0}
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;color:var(--accent);font-weight:600;margin-bottom:12px}
+h2{font-size:clamp(2rem,4.5vw,3.2rem);margin-bottom:16px}
+.lead{color:var(--muted);max-width:620px;font-size:1.05rem}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:999px;background:var(--accent);color:#1b1206;font-weight:600;text-decoration:none;border:0;cursor:pointer;font:inherit;font-weight:600;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(200,135,58,.4)}
+.btn.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.6)}
+
+/* nav */
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s}
+header.solid{background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:1.7rem;font-weight:700;text-decoration:none;color:#fff;display:flex;align-items:center;gap:10px}
+header.solid .logo{color:var(--brand)}
+.logo i{width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 50% 100%,var(--accent-2),var(--accent) 60%,transparent 61%),var(--brand-2);display:block;border:2px solid var(--accent)}
+nav ul{display:flex;gap:28px;list-style:none;padding:0}
+nav a{text-decoration:none;font-size:.92rem;font-weight:500;color:#fff;opacity:.92}
+header.solid nav a{color:var(--ink)}
+nav a:hover{color:var(--accent)}
+.tools{display:flex;gap:12px;align-items:center}
+.lang{display:flex;border:1px solid rgba(255,255,255,.5);border-radius:999px;overflow:hidden}
+header.solid .lang{border-color:var(--line)}
+.lang button{background:none;border:0;padding:6px 11px;font:inherit;font-size:.78rem;font-weight:600;cursor:pointer;color:#fff}
+header.solid .lang button{color:var(--ink)}
+.lang button.on{background:var(--accent);color:#1b1206!important}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.6rem;cursor:pointer}
+header.solid .burger{color:var(--ink)}
+
+/* hero */
+.hero{min-height:100svh;display:flex;align-items:center;color:#fff;position:relative;overflow:hidden;
+  background:
+   radial-gradient(1200px 600px at 80% 10%,rgba(233,184,114,.35),transparent 60%),
+   linear-gradient(160deg,#0e2d33 0%,#16424a 55%,#1f5a62 100%)}
+.hero:before{content:"";position:absolute;inset:0;background:
+  linear-gradient(transparent 60%,rgba(0,0,0,.35)),
+  repeating-linear-gradient(90deg,rgba(255,255,255,.03) 0 1px,transparent 1px 90px)}
+.skyline{position:absolute;bottom:0;left:0;width:100%;height:30%;opacity:.18}
+.heroimg{position:absolute;right:max(20px,calc((100vw - 1180px)/2 + 20px));top:50%;transform:translateY(-44%) rotate(2deg);width:min(30vw,380px);aspect-ratio:4/5;border-radius:22px;overflow:hidden;border:6px solid rgba(255,255,255,.9);box-shadow:0 30px 60px rgba(0,0,0,.4)}.heroimg img{width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.hero .wrap{position:relative;padding-top:110px;padding-bottom:140px}
+.hero h1{font-size:clamp(2.8rem,6vw,5.2rem);max-width:min(800px,58%);margin-bottom:20px}
+.hero h1 em{color:var(--accent-2);font-style:italic}
+.hero p{max-width:min(560px,56%);font-size:1.15rem;opacity:.9;margin-bottom:32px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:36px}
+.chips span{font-size:.82rem;padding:7px 14px;border:1px solid rgba(255,255,255,.3);border-radius:999px;backdrop-filter:blur(6px);background:rgba(255,255,255,.08)}
+
+/* booking bar */
+.book{position:relative;margin-top:-70px;z-index:5}
+.bar{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;display:grid;grid-template-columns:repeat(4,1fr) auto;gap:14px;align-items:end;border:1px solid var(--line)}
+.bar label{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:600;margin-bottom:6px}
+.bar input,.bar select{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);font:inherit}
+.bar input:focus,.bar select:focus{outline:2px solid var(--accent);outline-offset:1px}
+
+/* about */
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}
+.stat{padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.stat b{font-family:"Cormorant Garamond",serif;font-size:2.3rem;color:var(--brand);display:block;line-height:1}
+.stat span{font-size:.82rem;color:var(--muted)}
+.ph{border-radius:var(--radius);position:relative;overflow:hidden;color:rgba(255,255,255,.85);display:flex;align-items:flex-end;padding:16px;font-size:.78rem;letter-spacing:.04em}
+.ph svg{position:absolute;inset:0;width:100%;height:100%;opacity:.25}
+.ph.a{background:linear-gradient(135deg,#1f5a62,#0e2d33)}
+.ph.b{background:linear-gradient(135deg,#c8873a,#8a5420)}
+.ph.c{background:linear-gradient(135deg,#3a6f78,#16424a)}
+.ph.d{background:linear-gradient(135deg,#6d4c2a,#2c1d10)}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:1!important;transition:transform .6s}.card:hover .ph img,.gal .ph:hover img{transform:scale(1.05)}
+.ph span{position:relative;z-index:1;background:rgba(0,0,0,.35);padding:4px 10px;border-radius:999px}
+.about .ph{aspect-ratio:4/5;box-shadow:var(--shadow)}
+
+/* rooms */
+.rooms{background:linear-gradient(var(--bg),color-mix(in srgb,var(--brand) 6%,var(--bg)))}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:44px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.card .ph{height:170px;border-radius:0}
+.card .body{padding:22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:1.6rem}
+.card p{color:var(--muted);font-size:.92rem;flex:1}
+.price{display:flex;align-items:baseline;gap:6px;margin-top:6px}
+.price b{font-family:"Cormorant Garamond",serif;font-size:2rem;color:var(--brand)}
+.price small{color:var(--muted)}
+.tag{position:absolute;top:14px;right:14px;background:var(--accent);color:#1b1206;font-size:.72rem;font-weight:700;padding:4px 10px;border-radius:999px;z-index:2}
+.note{margin-top:22px;color:var(--muted);font-size:.88rem}
+
+/* why */
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin-top:44px}
+.feat{padding:26px;border-radius:var(--radius);background:var(--surface);border:1px solid var(--line)}
+.feat .ic{width:46px;height:46px;border-radius:12px;background:color-mix(in srgb,var(--accent) 18%,transparent);display:grid;place-items:center;font-size:1.3rem;margin-bottom:14px}
+.feat h3{font-size:1.4rem;margin-bottom:6px}
+.feat p{color:var(--muted);font-size:.92rem}
+
+/* location */
+.loc{background:var(--brand-2);color:#f1ece2}
+.loc .lead{color:#b5c4c7}
+.locgrid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.near{list-style:none;padding:0;margin-top:26px;display:grid;gap:12px}
+.near li{display:flex;justify-content:space-between;padding:14px 18px;background:rgba(255,255,255,.06);border-radius:12px;border:1px solid rgba(255,255,255,.08)}
+.near li span:last-child{color:var(--accent-2)}
+.map{border-radius:var(--radius);overflow:hidden;min-height:380px;border:1px solid rgba(255,255,255,.12)}
+.mapcard{display:grid;place-items:center;background:rgba(255,255,255,.06);padding:32px;text-align:center}.mapcard>div{display:grid;gap:14px;justify-items:center}.mapcard b{font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-weight:600}.mapcard small{color:var(--accent-2);text-transform:uppercase;letter-spacing:.14em}.map iframe{width:100%;height:100%;min-height:380px;border:0;filter:grayscale(.3) contrast(1.05)}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:14px;margin-top:40px}
+.gal .ph:nth-child(1){grid-column:span 2;grid-row:span 2}
+.gal .ph:nth-child(4){grid-column:span 2}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.clist{list-style:none;padding:0;display:grid;gap:16px;margin-top:26px}
+.clist li{display:flex;gap:14px}
+.clist .ic{width:42px;height:42px;flex:none;border-radius:12px;background:color-mix(in srgb,var(--accent) 18%,transparent);display:grid;place-items:center}
+.clist small{display:block;color:var(--muted)}
+.clist a{text-decoration:none;font-weight:500}
+form{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;display:grid;gap:14px;box-shadow:var(--shadow)}
+form input,form textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);font:inherit}
+form textarea{min-height:110px;resize:vertical}
+footer{background:var(--brand-2);color:#9fb0b4;padding:32px 0;font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.sticky{display:none}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);max-width:min(560px,calc(100% - 32px));background:var(--brand-2);color:#f1ece2;padding:16px 20px;border-radius:14px;box-shadow:var(--shadow);z-index:80;font-size:.92rem;border:1px solid var(--accent)}
+.reveal{transition:.7s}
+
+@media(max-width:900px){
+  section{padding:64px 0}
+  nav ul{position:fixed;inset:72px 0 auto 0;background:var(--bg);flex-direction:column;padding:20px;gap:16px;transform:translateY(-130%);transition:.3s;box-shadow:var(--shadow)}
+  nav ul.open{transform:none}
+  nav a{color:var(--ink)!important;font-size:1.05rem}
+  .burger{display:block}
+  .bar{grid-template-columns:1fr 1fr}
+  .bar .btn{grid-column:span 2;justify-content:center}
+  .heroimg{display:none}
+  .about .ph{aspect-ratio:4/3}
+  .hero h1,.hero p{max-width:none}
+  .about,.locgrid,.contact{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
+  .stats{grid-template-columns:1fr 1fr 1fr}
+  .sticky{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--surface);border-top:1px solid var(--line);padding:10px 16px;gap:10px}
+  .sticky a{flex:1;justify-content:center;padding:12px}
+  footer{padding-bottom:84px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="logo" href="#top"><i></i>Zora</a>
+    <nav>
+      <ul id="menu">
+        <li><a href="#about" data-i="n_about"></a></li>
+        <li><a href="#rooms" data-i="n_rooms"></a></li>
+        <li><a href="#services" data-i="n_serv"></a></li>
+        <li><a href="#gallery" data-i="n_gal"></a></li>
+        <li><a href="#contact" data-i="n_cont"></a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Language">
+        <button data-l="bg">BG</button><button data-l="en">EN</button><button data-l="ru">RU</button>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <svg class="skyline" viewBox="0 0 1200 200" preserveAspectRatio="none" fill="#fff"><path d="M0 200V140h60v-30h40v50h50V90h30v70h60v-40h40v40h70V70h35v90h50v-50h60v50h40V100h40v60h60v-30h50v30h70V80h30v80h60v-45h50v45h60v-60h40v60h60v-35h50v35h60V200z"/></svg>
+  <div class="heroimg"><img src="img/8816.jpg" alt="Hotel Zora room"></div>
+  <div class="wrap">
+    <h1 data-i="h_title"></h1>
+    <p data-i="h_sub"></p>
+    <div class="cta">
+      <a class="btn" href="#rooms" data-i="h_cta"></a>
+      <a class="btn ghost" href="tel:+35929530557">📞 +359 2 953 05 57</a>
+    </div>
+    <div class="chips"><span data-i="c1"></span><span data-i="c2"></span><span data-i="c3"></span><span data-i="c4"></span></div>
+  </div>
+</section>
+
+<div class="book wrap">
+  <form class="bar" id="bookForm" style="padding:22px;border-radius:18px;grid-template-columns:repeat(4,1fr) auto">
+    <div><label data-i="b_in"></label><input type="date" id="din" required></div>
+    <div><label data-i="b_out"></label><input type="date" id="dout" required></div>
+    <div><label data-i="b_guests"></label>
+      <select id="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option></select></div>
+    <div><label data-i="b_room"></label>
+      <select id="roomSel"></select></div>
+    <button class="btn" type="submit" data-i="b_btn"></button>
+  </form>
+</div>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="reveal">
+      <div class="eyebrow" data-i="a_eye"></div>
+      <h2 data-i="a_title"></h2>
+      <p class="lead" data-i="a_text"></p>
+      <div class="stats">
+        <div class="stat"><b>8+1</b><span data-i="s1"></span></div>
+        <div class="stat"><b>3</b><span data-i="s2"></span></div>
+        <div class="stat"><b>24/7</b><span data-i="s3"></span></div>
+      </div>
+    </div>
+    <div class="ph a reveal"><img src="img/8805.jpg" alt="Hotel Zora entrance" style="object-position:70% 50%"></div>
+  </div>
+</section>
+
+<section id="rooms" class="rooms">
+  <div class="wrap">
+    <div class="eyebrow" data-i="r_eye"></div>
+    <h2 data-i="r_title"></h2>
+    <p class="lead" data-i="r_sub"></p>
+    <div class="grid" id="roomGrid"></div>
+    <p class="note" data-i="r_note"></p>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="eyebrow" data-i="f_eye"></div>
+    <h2 data-i="f_title"></h2>
+    <div class="feats">
+      <div class="feat reveal"><div class="ic">🛁</div><h3 data-i="f1t"></h3><p data-i="f1d"></p></div>
+      <div class="feat reveal"><div class="ic">📶</div><h3 data-i="f2t"></h3><p data-i="f2d"></p></div>
+      <div class="feat reveal"><div class="ic">☕</div><h3 data-i="f3t"></h3><p data-i="f3d"></p></div>
+      <div class="feat reveal"><div class="ic">🛡️</div><h3 data-i="f4t"></h3><p data-i="f4d"></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="loc">
+  <div class="wrap locgrid">
+    <div>
+      <div class="eyebrow" data-i="l_eye"></div>
+      <h2 data-i="l_title"></h2>
+      <p class="lead" data-i="l_text"></p>
+      <ul class="near">
+        <li><span data-i="n1"></span><span>Лагера</span></li>
+        <li><span data-i="n2"></span><span data-i="near"></span></li>
+        <li><span data-i="n3"></span><span data-i="near"></span></li>
+        <li><span data-i="n4"></span><span data-i="near"></span></li>
+      </ul>
+    </div>
+    <div class="map mapcard"><div><small data-i="k_addr"></small><b data-i="addr"></b><a class="btn" target="_blank" rel="noopener" href="https://www.openstreetmap.org/search?query=Smolyanska%202%2C%20Sofia" data-i="maplink"></a></div></div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="eyebrow" data-i="g_eye"></div>
+    <h2 data-i="g_title"></h2>
+    <div class="gal">
+      <div class="ph a"><img loading="lazy" src="img/8816.jpg" alt="Double room"></div>
+      <div class="ph b"><img loading="lazy" src="img/8862.jpg" alt="Lounge"></div>
+      <div class="ph c"><img loading="lazy" src="img/8819.jpg" alt="Bathroom"></div>
+      <div class="ph d"><img loading="lazy" src="img/8809.jpg" alt="Reception"></div>
+      <div class="ph a"><img loading="lazy" src="img/8860.jpg" alt="Apartment living room"></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="background:color-mix(in srgb,var(--brand) 6%,var(--bg))">
+  <div class="wrap contact">
+    <div class="reveal">
+      <div class="eyebrow" data-i="k_eye"></div>
+      <h2 data-i="k_title"></h2>
+      <ul class="clist">
+        <li><div class="ic">📍</div><div><small data-i="k_addr"></small><span data-i="addr"></span></div></li>
+        <li><div class="ic">📞</div><div><small data-i="k_phone"></small><a href="tel:+35929530557">+359 2 953 05 57</a><br><a href="tel:+359887796577">+359 887 79 65 77</a><br><a href="tel:+359887772896">+359 887 77 28 96</a></div></li>
+        <li><div class="ic">✉️</div><div><small>Email</small><a href="mailto:zora_sofia@mail.bg">zora_sofia@mail.bg</a></div></li>
+      </ul>
+    </div>
+    <form id="msgForm" class="reveal">
+      <input id="mn" required data-ph="k_name">
+      <input id="mp" type="tel" data-ph="k_tel">
+      <textarea id="mm" required data-ph="k_msg"></textarea>
+      <button class="btn" type="submit" data-i="k_send"></button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© <span id="yr"></span> Семеен хотел Зора</span><span data-i="foot"></span></div></footer>
+<div class="toast" id="toast" hidden></div>
+<div class="sticky"><a class="btn" href="tel:+35929530557">📞</a><a class="btn" href="#rooms" data-i="h_cta"></a></div>
+
+<script>
+const T={
+bg:{n_about:"За нас",n_rooms:"Стаи",n_serv:"Удобства",n_gal:"Галерия",n_cont:"Контакти",
+h_title:"Вашият дом <em>в София</em>",h_sub:"Семеен хотел Зора — уют, чистота и топло посрещане на две крачки от центъра. Идеален за командировки и спокойна почивка.",h_cta:"Резервирай",
+c1:"✓ Директна цена",c2:"✓ Туристически данък включен",c3:"✓ Безплатен интернет",c4:"✓ Кабелна ТВ",
+b_in:"Настаняване",b_out:"Освобождаване",b_guests:"Гости",b_room:"Тип стая",b_btn:"Провери наличност",
+a_eye:"За хотела",a_title:"Малък хотел с голямо внимание",a_text:"Зора е семеен хотел в кв. Лагера, до Пирогов и Военномедицинска академия. Приютява индивидуални гости и малки групи — командировани, лекари, пациенти и техните близки — в уютни, елегантно обзаведени стаи.",
+s1:"стаи и апартамент",s2:"езика на сайта",s3:"внимателно обслужване",photo:"Снимка на хотела",
+r_eye:"Стаи и цени",r_title:"Намерете своята стая",r_sub:"Прозрачни цени в евро. Без скрити такси.",
+r_note:"Цените са на стая на нощ в EUR и включват туристически данък. Настаняването на повече гости е според посочените капацитети.",
+night:"/ нощ",pick:"Избери",
+rm1:"Стая с две легла",rm1d:"Две отделни легла, собствена баня, кабелна ТВ и интернет. 38 € за един гост, 43 € за двама.",
+rm2:"Стая със спалня",rm2d:"Уютна стая с голямо легло — идеална за двойки или самостоятелен гост. 38 € за един, 43 € за двама.",
+rm3:"Стая със спалня и разтегателен диван",rm3d:"Повече пространство за малко семейство или гост, който обича да се разпростира.",
+rm4:"Апартамент с две спални, дневна и тераса",rm4d:"Две спални, дневна и тераса, две бани. За 4 души (3 за по-голям комфорт).",
+rm5:"Отдих",rm5d:"Най-достъпният вариант за кратък престой.",pop:"Най-търсен",
+f_eye:"Удобства",f_title:"Всичко необходимо за спокоен престой",
+f1t:"Собствена баня",f1d:"Всяка стая разполага с лична баня.",f2t:"Интернет и кабелна ТВ",f2d:"Работете или се отпуснете — във всяка стая.",f3t:"Кафе-аперитив",f3d:"Безалкохолно, бира, кафе и чай на достъпни цени — тихо място и за малка работна среща.",f4t:"Чистота и сигурност",f4d:"Внимателно обслужване и спокойна среда.",
+l_eye:"Локация",l_title:"Близо до всичко важно",l_text:"На ъгъла на ул. Смолянска и бул. Акад. Гешов, кв. Лагера, район Красно село — удобно за бизнес и медицински пътувания.",
+n1:"Кв.",n2:"УМБАЛСМ „Пирогов“",n3:"Военномедицинска академия",n4:"Банки, офиси, бизнес центрове",near:"в близост",
+g_eye:"Галерия",g_title:"Усетете атмосферата",photo_room:"Стая — демо снимка",photo_cafe:"Кафе-аперитив — демо снимка",photo_bath:"Баня — демо снимка",photo_out:"Фасада — демо снимка",photo_apt:"Апартамент — демо снимка",
+k_eye:"Контакти",k_title:"Свържете се с нас",maplink:"Виж на картата ↗",k_addr:"Адрес",addr:"1612 София, кв. Лагера, ул. Смолянска 2 (ъгъл)",k_phone:"Телефони",
+k_name:"Вашето име",k_tel:"Телефон",k_msg:"Съобщение (дати, брой гости…)",k_send:"Изпрати запитване",
+foot:"Демо версия на нов уебсайт."},
+en:{n_about:"About",n_rooms:"Rooms",n_serv:"Amenities",n_gal:"Gallery",n_cont:"Contact",
+h_title:"Your home <em>in Sofia</em>",h_sub:"Family Hotel Zora — comfort, cleanliness and a warm welcome, steps from the city centre. Ideal for business trips and quiet getaways.",h_cta:"Book now",
+c1:"✓ Best direct rate",c2:"✓ Tourist tax included",c3:"✓ Free internet",c4:"✓ Cable TV",
+b_in:"Check-in",b_out:"Check-out",b_guests:"Guests",b_room:"Room type",b_btn:"Check availability",
+a_eye:"About the hotel",a_title:"A small hotel with big attention",a_text:"Zora is a family-run hotel in the Lagera quarter, next to Pirogov hospital and the Military Medical Academy. We host individual guests and small groups — business travellers, medical professionals, patients and their families — in cosy, elegantly furnished rooms.",
+s1:"rooms & apartment",s2:"website languages",s3:"attentive service",photo:"Hotel photo",
+r_eye:"Rooms & rates",r_title:"Find your room",r_sub:"Transparent prices in euro. No hidden fees.",
+r_note:"Rates are per room per night in EUR and include tourist tax. Extra-guest rules follow the stated capacities.",
+night:"/ night",pick:"Select",
+rm1:"Twin Room",rm1d:"Two separate beds, private bathroom, cable TV and internet. €38 for one guest, €43 for two.",
+rm2:"Double Room",rm2d:"A cosy room with a double bed — perfect for couples or solo guests. €38 for one, €43 for two.",
+rm3:"Double Room with Sofa Bed",rm3d:"Extra space for a small family or a guest who likes to spread out.",
+rm4:"Two-Bedroom Apartment with Terrace",rm4d:"Two bedrooms, living room, terrace and two bathrooms. For 4 guests (3 for extra comfort).",
+rm5:"Leisure Stay",rm5d:"Our most affordable option for a short stay.",pop:"Most popular",
+f_eye:"Amenities",f_title:"Everything you need for a restful stay",
+f1t:"Private bathroom",f1d:"Every room has its own bathroom.",f2t:"Internet & cable TV",f2d:"Work or unwind — in every room.",f3t:"Café-aperitif",f3d:"Soft drinks, beer, coffee and tea at fair prices — a calm spot for a small business meeting.",f4t:"Clean & secure",f4d:"Attentive service in a peaceful setting.",
+l_eye:"Location",l_title:"Close to what matters",l_text:"At the corner of Smolyanska St. and Akad. Geshov Blvd., Lagera quarter, Krasno Selo — convenient for business and medical travel.",
+n1:"Quarter",n2:"Pirogov Hospital",n3:"Military Medical Academy",n4:"Banks, offices, business centres",near:"nearby",
+g_eye:"Gallery",g_title:"Feel the atmosphere",photo_room:"Room — demo photo",photo_cafe:"Café — demo photo",photo_bath:"Bathroom — demo photo",photo_out:"Exterior — demo photo",photo_apt:"Apartment — demo photo",
+k_eye:"Contact",k_title:"Get in touch",maplink:"View on map ↗",k_addr:"Address",addr:"2 Smolyanska St. (corner), Lagera, 1612 Sofia",k_phone:"Phones",
+k_name:"Your name",k_tel:"Phone",k_msg:"Message (dates, number of guests…)",k_send:"Send enquiry",
+foot:"Demo redesign."},
+ru:{n_about:"О нас",n_rooms:"Номера",n_serv:"Удобства",n_gal:"Галерея",n_cont:"Контакты",
+h_title:"Ваш дом <em>в Софии</em>",h_sub:"Семейный отель Зора — уют, чистота и тёплый приём в двух шагах от центра. Идеален для командировок и спокойного отдыха.",h_cta:"Забронировать",
+c1:"✓ Лучшая прямая цена",c2:"✓ Туристический налог включён",c3:"✓ Интернет",c4:"✓ Кабельное ТВ",
+b_in:"Заезд",b_out:"Выезд",b_guests:"Гости",b_room:"Тип номера",b_btn:"Проверить наличие",
+a_eye:"Об отеле",a_title:"Небольшой отель с большим вниманием",a_text:"Зора — семейный отель в квартале Лагера, рядом с больницей Пирогов и Военно-медицинской академией. Принимаем индивидуальных гостей и небольшие группы в уютных, элегантно обставленных номерах.",
+s1:"номеров и апартамент",s2:"языка сайта",s3:"внимательный сервис",photo:"Фото отеля",
+r_eye:"Номера и цены",r_title:"Выберите свой номер",r_sub:"Прозрачные цены в евро. Без скрытых платежей.",
+r_note:"Цены за номер в сутки в EUR, туристический налог включён.",
+night:"/ ночь",pick:"Выбрать",
+rm1:"Номер с двумя кроватями",rm1d:"Две кровати, собственная ванная, кабельное ТВ и интернет. 38 € за одного, 43 € за двоих.",
+rm2:"Номер с двуспальной кроватью",rm2d:"Уютный номер — для пар или одного гостя. 38 € за одного, 43 € за двоих.",
+rm3:"Номер с кроватью и раскладным диваном",rm3d:"Больше места для небольшой семьи.",
+rm4:"Апартамент с двумя спальнями и террасой",rm4d:"Две спальни, гостиная, терраса, две ванные. На 4 человека (3 — для комфорта).",
+rm5:"Отдых",rm5d:"Самый доступный вариант для короткого пребывания.",pop:"Популярный",
+f_eye:"Удобства",f_title:"Всё необходимое для спокойного отдыха",
+f1t:"Собственная ванная",f1d:"В каждом номере.",f2t:"Интернет и кабельное ТВ",f2d:"Работайте или отдыхайте.",f3t:"Кафе-аперитив",f3d:"Напитки, пиво, кофе и чай по доступным ценам — спокойное место для деловой встречи.",f4t:"Чистота и безопасность",f4d:"Внимательное обслуживание.",
+l_eye:"Расположение",l_title:"Рядом со всем важным",l_text:"На углу ул. Смолянска и бул. Акад. Гешов, кв. Лагера, р-н Красно село.",
+n1:"Квартал",n2:"Больница «Пирогов»",n3:"Военно-медицинская академия",n4:"Банки, офисы, бизнес-центры",near:"рядом",
+g_eye:"Галерея",g_title:"Почувствуйте атмосферу",photo_room:"Номер — демо-фото",photo_cafe:"Кафе — демо-фото",photo_bath:"Ванная — демо-фото",photo_out:"Фасад — демо-фото",photo_apt:"Апартамент — демо-фото",
+k_eye:"Контакты",k_title:"Свяжитесь с нами",maplink:"Виж на картата ↗",maplink:"Открыть на карте ↗",k_addr:"Адрес",addr:"1612 София, кв. Лагера, ул. Смолянска 2 (угол)",k_phone:"Телефоны",
+k_name:"Ваше имя",k_tel:"Телефон",k_msg:"Сообщение (даты, число гостей…)",k_send:"Отправить запрос",
+foot:"Демо-версия нового сайта."}
+};
+const ROOMS=[
+ {k:"rm1",p:38,c:"a",i:"8827"},{k:"rm2",p:38,c:"c",pop:1,i:"8816"},{k:"rm3",p:48,c:"b",i:"8846"},{k:"rm4",p:90,c:"d",i:"8860"},{k:"rm5",p:32,c:"c",i:"8830"}];
+let lang="bg";try{lang=localStorage.getItem("zl")||"bg"}catch(e){}
+function render(){
+  const t=T[lang];document.documentElement.lang=lang;
+  document.querySelectorAll("[data-i]").forEach(e=>e.innerHTML=t[e.dataset.i]);
+  document.querySelectorAll("[data-ph]").forEach(e=>e.placeholder=t[e.dataset.ph]);
+  document.querySelectorAll(".lang button").forEach(b=>b.classList.toggle("on",b.dataset.l===lang));
+  document.getElementById("roomGrid").innerHTML=ROOMS.map(r=>`<article class="card reveal in"><div class="ph ${r.c}" style="position:relative">${r.pop?`<span class="tag">${t.pop}</span>`:""}<img loading="lazy" src="img/${r.i}.jpg" alt="${t[r.k]}"></div><div class="body"><h3>${t[r.k]}</h3><p>${t[r.k+"d"]}</p><div class="price"><small>${r.k=="rm4"?"":(lang=="en"?"from":lang=="ru"?"от":"от")}</small><b>€${r.p}</b><small>${t.night}</small></div><button class="btn" data-pick="${r.k}">${t.pick}</button></div></article>`).join("");
+  const sel=document.getElementById("roomSel"),cur=sel.value;
+  sel.innerHTML=ROOMS.map(r=>`<option value="${r.k}">${t[r.k]} — €${r.p}</option>`).join("");if(cur)sel.value=cur;
+  document.querySelectorAll("[data-pick]").forEach(b=>b.onclick=()=>{sel.value=b.dataset.pick;scrollTo({top:0,behavior:"smooth"});document.getElementById("din").focus({preventScroll:true})});
+}
+document.querySelectorAll(".lang button").forEach(b=>b.onclick=()=>{lang=b.dataset.l;try{localStorage.setItem("zl",lang)}catch(e){}render()});
+render();
+document.getElementById("yr").textContent=new Date().getFullYear();
+// dates
+const din=document.getElementById("din"),dout=document.getElementById("dout"),iso=d=>d.toISOString().slice(0,10);
+const today=new Date(),tom=new Date(Date.now()+864e5);
+din.min=iso(today);din.value=iso(tom);dout.value=iso(new Date(Date.now()+2*864e5));
+din.onchange=()=>{dout.min=din.value;if(dout.value<=din.value){const d=new Date(din.value);d.setDate(d.getDate()+1);dout.value=iso(d)}};
+// demo forms: show a confirmation panel instead of sending
+const toast=document.getElementById("toast");let tt;
+function say(m){toast.textContent=m;toast.hidden=false;clearTimeout(tt);tt=setTimeout(()=>toast.hidden=true,7000)}
+const DEMO={bg:"Демо: в реалната версия заявката отива директно до хотела (zora_sofia@mail.bg).",en:"Demo: on the live site this request goes straight to the hotel (zora_sofia@mail.bg).",ru:"Демо: на рабочем сайте запрос уходит прямо в отель (zora_sofia@mail.bg)."};
+document.getElementById("bookForm").onsubmit=e=>{e.preventDefault();const s=document.getElementById("roomSel");say(DEMO[lang]+" — "+s.options[s.selectedIndex].text+", "+din.value+" → "+dout.value)};
+document.getElementById("msgForm").onsubmit=e=>{e.preventDefault();say(DEMO[lang])};
+// header, menu, reveal
+const hdr=document.getElementById("hdr"),onScroll=()=>hdr.classList.toggle("solid",scrollY>40);onScroll();addEventListener("scroll",onScroll,{passive:true});
+const menu=document.getElementById("menu");document.getElementById("burger").onclick=()=>menu.classList.toggle("open");
+menu.onclick=()=>menu.classList.remove("open");
+const io=new IntersectionObserver(es=>es.forEach(x=>x.isIntersecting&&x.target.classList.add("in")),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(e=>io.observe(e));
+</script>
+
+</body>
+</html>
